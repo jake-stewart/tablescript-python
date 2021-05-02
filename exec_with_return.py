@@ -1,13 +1,6 @@
 import ast
 import copy
 
-def convertExpr2Expression(Expr):
-        Expr.lineno = 0
-        Expr.col_offset = 0
-        result = ast.Expression(Expr.value, lineno=0, col_offset=0)
-
-        return result
-
 def exec_with_return(code, _globals, _locals):
     code_ast = ast.parse(code)
 
@@ -23,7 +16,8 @@ def exec_with_return(code, _globals, _locals):
         return None
 
     if type(last_ast.body[0]) == ast.Expr:
-        return eval(compile(convertExpr2Expression(last_ast.body[0]), "<ast>", "eval"), _globals, _locals)
+        expr = ast.Expression(last_ast.body[0].value, lineno=0, col_offset=0)
+        return eval(compile(expr, "<ast>", "eval"), _globals, _locals)
 
     else:
         exec(compile(last_ast, "<ast>", "exec"), _globals, _locals)
