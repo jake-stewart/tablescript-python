@@ -52,11 +52,11 @@ As well as this, the character `>` will apply the configuration to subsequent ce
 ### Scripting
 Tablescript can run python code contained between a pair of backticks (\`).
 Some functions have been provided, including:
-* `row_sum(n=0)`: Return the sum of entire row if n=0, otherwise sum n rows up.
-* `row_product(n=0)`: Return the product of entire row if n=0, otherwise product of n rows up.
+* `row_sum(n=0)`: Return the sum of entire row if n=0, otherwise sum n columns left.
+* `row_prod(n=0)`: Return the product of entire row if n=0, otherwise product of n columns left.
 * `row(n)`: Return the value n rows up in the current column.
-* `col_sum(n=0)`: Return the sum of entire column if n=0, otherwise sum n columns left.
-* `col_product(n=0)`: Return the product of entire column if n=0, otherwise product of n columns left.
+* `col_sum(n=0)`: Return the sum of entire column if n=0, otherwise sum n rows up.
+* `col_prod(n=0)`: Return the product of entire column if n=0, otherwise product of n rows up.
 * `col(n)`: Return the value n columns left in the current row.
 * `money(n)`: convert a number into a Money datatype.
 
