@@ -25,12 +25,12 @@ This script allows me to create and edit powerful tables easily and quickly.
 Columns are separated by `|` characters, and rows by newlines.
 
 ### Merging
-Column merging is denoted with `<` at the start of a column.
+Column merging is denoted with `<` at the start of a cell.
 
-Row merging is denoted with `^` at the start of a column.
+Row merging is denoted with `^` at the start of a cell.
 
 ### Configuring
-A cell can be configured by with a `?` at the start of a column. Any characters after, until whitespace or a separator, will be parsed as configuration options.
+A cell can be configured by with a `?` at the start of a cell. Any characters after, until whitespace or a separator, will be parsed as configuration options.
 The configuration options are as follows:
 * `l`: left alignment
 * `c`: center alignment
