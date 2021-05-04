@@ -12,6 +12,7 @@ Supports:
 * Text alignment (vertical and horizontal)
 * Text padding
 * Border theming
+* Column resizing
 * Python scripting
 
 ## Why?
@@ -45,6 +46,7 @@ The configuration options are as follows:
 * `d`: use default configuration.
 * a number followed by `B`: change the border and corner style.
 * a number followed by `C`: change the corner style.
+* a number followed by `w`: change the width of the column.
 
 As well as this, the character `>` will apply the configuration to subsequent cells in the current row, while `v` will apply the configuration to  all subsequent cells in the current column. Think of the characters as pointing in the direction of where the configuration will apply. The characters can be combined `>v` or `v>` to apply to both rows and columns.
 
