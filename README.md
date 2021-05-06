@@ -63,4 +63,4 @@ Some functions have been provided, including:
 * `money(n)`: convert a number into a Money datatype.
 
 Values used in these functions are found using a regex, and so number can be contained in the middle of strings.
-Furthermore, if a number begins with a `$`, it will be converted into a Money datatype, which makes formatting easier.
+Furthermore, if a number begins with a `$`, it will be converted into a Money datatype, which automatically rounds it to two decimal places and prepends a dollar sign when displayed.
